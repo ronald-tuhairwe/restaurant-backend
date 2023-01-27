@@ -53,7 +53,7 @@ exports.signup = async (req, res, next) => {
   newUser.role = "customer";
   try {
     await newUser.save();
-    res.status(201).json({ success: true, data: newUser });
+    res.status(201).json({ success: true, data: "New user has been created" });
   } catch (error) {
     res.status(201).json({ success: true, data: "not unique username" });
   }

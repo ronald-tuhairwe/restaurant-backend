@@ -35,7 +35,7 @@ exports.addcontactMesssage = async (req, res, next) => {
 
 exports.bookTable = async (req, res, next) => {
   const message = req.body;
-  // console.log(newFood, req.params);
+  
   try {
     await Info.updateOne(
       { _id: "63b35544ad544a46a4ddcafe" },
